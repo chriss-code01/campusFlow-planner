@@ -43,7 +43,55 @@
             <p class="sidebar-note">All data stays on this device</p>
         </nav>
 
-        
+        <main>
+            
+            <!-- DASHBOARD -->
+             <section id="page-dashboard" class="page active">
+                <div class="page-header">
+                    <div>
+                        <h2>Dashboard</h2>
+                        <p id="greeting"></p>
+                    </div>
+                    <button class="button primary" data-page="editor">➕ New item</button>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="card">
+                        <p class="stat-label">Open items</p>
+                        <p class="stat-value" id="stat-open">0</p>
+                        <p class="small-text">tasks and events</p>
+                    </div>
+                    <div class="card">
+                        <p class="stat-label">Overdue</p>
+                        <p class="stat-value" id="stat-overdue">0</p>
+                        <p class="small-text">needs attention</p>
+                    </div>
+                    <div class="card">
+                        <p class="stat-label">Study hours</p>
+                        <p class="stat-value" id="stat-hours">0</p>
+                        <p class="small-text">logged this week</p>
+                    </div>
+                </div>
+
+                <div class="two-columns">
+                    <div class="card">
+                        <h3>📈 Last 7 days (hours)</h3>
+                        <div id="chart" class="chart"></div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎯 Weekly study target</h3>
+                        <p class="target-numbers">
+                            <span id="target-hours">0</span> / <span id="target-goal">0</span> h
+                        </p>
+                        <div id="progress-bar" class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        <p id="target-message" class="small-text"></p>
+                    </div>
+                </div>
+             </section>
+        </main>
       </div>
 </body>
 </html>
