@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFlow - student Task and Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top bar for phones -->
+     <header class="topbar">
+        <button id="menu-button" class="menu-button" aria-label="open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1>🎓 CampusFlow</h1>
+     </header>
+
+
+
+     <!-- Dark background behind the phone menu-->
+      <div id="overlay" class="overlay"></div>
+
+      <div class="app">
+
+
+        <nav id="sidebar" class="sidebar">
+            <div class="brand">
+                <div class="logo">🎓</div>
+                <div>
+                    <h1>campusFlow</h1>
+                    <small>Task and Event Planner</small>
+                </div>
+            </div>
+            
+            <button class="nav-button active" data-page="dashboard">📊 Dashboard</button>
+            <button class="nav-button" data-page="list">🗂️ Tasks and Events</button>
+            <button class="nav-button" data-page="editor">➕ Add / Edit</button>
+            <button class="nav-button" data-page="settings">⚙️ Settings</button>
+            <button class="nav-button" data-page="about">ℹ️ About</button>
+
+            <p class="sidebar-note">All data stays on this device</p>
+        </nav>
+
+        
+      </div>
+</body>
+</html>
