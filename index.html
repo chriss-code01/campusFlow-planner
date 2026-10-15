@@ -131,6 +131,45 @@
                     <button class="button" id="direction-button">▲</button>
                 </div>
                 <p id="regex-error" class="error-text"></p>
+
+                <div class="filter-row">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="task">Tasks</button>
+                    <button class="chip" data-filter="event">Events</button>
+                    <button class="chip" data-filter="open">Open</button>
+                    <button class="chip" data-filter="done">Done</button>
+                    <button class="chip" data-filter="overdue">Overdue</button>
+                </div>
+
+                <div class="card table-card">
+                    <table id="items-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Duration</th>
+                                <th>Priority</th>
+                                <th>Tags</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items-body"></tbody>
+                    </table>
+                    <p id="empty-message" class="empty-message">🌟 Nothing here yet. Add your first task or event!</p>
+                </div>
+                <p id="count-message" class="small-text"></p>
+             </section>
+
+
+             <section id="page-editor" class="page">
+                <div class="page-header">
+                    <div>
+                        <h2 id="editor-title">Add item</h2>
+                        <p>Create a new task or event, or edit an existing one.</p>
+                    </div>
+                </div>
              </section>
         </main>
       </div>

@@ -389,3 +389,136 @@ input[type="text"], input[type="search"], input[type="number"], input[type="date
     align-items: center;
     margin-bottom: 8px;
 }
+
+.toolbar input[type="search"] {
+    flex: 1;
+    min-width: 220px;
+    width: auto;
+}
+
+.toolbar select {
+    flex: 1;
+    width: auto;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.checkbox-label input, .done-box {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--brand);
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 16px 0;
+}
+
+.chip {
+    padding: 7px 14px;
+    background-color: var(--surface);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chip.active {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: white;
+}
+
+.table-card {
+    padding: 6px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+}
+
+#items-table thead {
+    display: none;
+}
+
+#items-table, #items-table tbody, #items-table tr, #items-table td {
+    display: block;
+}
+
+#items-table tr {
+    position: relative;
+    margin: 10px;
+    padding: 10px 12px;
+    background-color: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+#items-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+    border-bottom: none;
+    text-align: right;
+}
+
+#items-table td::before {
+    content: attr(data-label);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+}
+
+#items-table td.title-cell {
+    display: block;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+#items-table td.check-cell {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+}
+
+#items-table td.title-cell::before, #items-table td.check-cell::before, #items-table td.actions-cell::before {
+    display: none;
+}
+
+#items-table td.actions-cell {
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+#items-table td.tags-cell {
+    display: block;
+    text-align: left;
+}
+
