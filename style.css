@@ -261,3 +261,131 @@ button:focus, input:focus, select:focus, textarea:focus {
     gap: 14px;
     margin-bottom: 22px;
 }
+
+.page-header h2 {
+    font-size: 26px;
+}
+
+.page-header p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.two-columns {
+    margin-bottom: 16px;
+}
+
+/* components */
+
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.button {
+    flex: 1;
+    padding: 10px 16px;
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    border-color: var(--brand);
+
+}
+
+.button.primary {
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    border: none;
+    color: white
+}
+
+.button.danger {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.small-button {
+    padding: 6px 10px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="text"], input[type="search"], input[type="number"], input[type="datetime-local"], select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.form-card {
+    max-width: 720px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.form-grid .field {
+    margin-bottom: 0;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.form-buttons {
+    margin-top: 20px;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}

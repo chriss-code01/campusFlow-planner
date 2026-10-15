@@ -90,6 +90,47 @@
                         <p id="target-message" class="small-text"></p>
                     </div>
                 </div>
+
+                </div>
+
+                <div class="card">
+                    <h3>🔜 Coming up</h3>
+                    <div id="upcoming"></div>
+                </div>
+             </section>
+
+             <!--List-->.
+             <section id="page-list" class="page">
+                <div class="page-header">
+                    <div>
+                        <h2>Tasks and Events</h2>
+                        <p>Search, filter, sort and manage everything in one place.</p>
+                    </div>
+                    <div class="button-row">
+                        <button class="button" id="export-button">⬇️ Export JSON</button>
+                        <button class="button primary" data-page="editor">➕ New item</button>
+
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <input type="search" id="search-input" placeholder="Search title, notes or #tags (press /)">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="regex-checkbox"> Regex
+                    </label>
+                    <select id="tag-select">
+                        <option value="">All tags</option>
+                    </select>
+                    <select id="sort-select">
+                        <option value="date">Sort: Date</option>
+                        <option value="title">Sort: Title</option>
+                        <option value="type">Sort: Type</option>
+                        <option value="duration">Sort: Duration</option>
+                        <option value="priority">Sort: Priority</option>
+                    </select>
+                    <button class="button" id="direction-button">▲</button>
+                </div>
+                <p id="regex-error" class="error-text"></p>
              </section>
         </main>
       </div>
