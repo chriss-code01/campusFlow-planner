@@ -278,7 +278,57 @@
                     </div>
                 </div>
              </section>
+
+             <!--ABOUT-->
+             <section id="page-about" class="page">
+                <div class="page-header">
+                    <div>
+                        <h2>About CampusFlow</h2>
+                        <p>A simple planner that keeps student life organised</p>
+                    </div>
+                </div>
+
+                <div class="two-equal">
+                    <div class="card">
+                        <h3>✨ Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>Tasks and events</strong><br>Track assignments, classes and exams with dates, duration, priorities and tags.</li>
+                            <li><strong>Search and sort</strong><br>Search normally or with a regular expression, filter by tag and sort the list.</li>
+                            <li><strong>7-day chart</strong><br>See your study hours and compare them with a weekly target.</li>
+                            <li><strong>Works on any screen</strong><br>Sidebar on computers, hamburger menu and cards on phones.</li>
+                            <li><strong>Saved on your device</strong><br>Uses localStorage, with JSON import and export for backups.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>⌨️ Keyboard shortcuts</h3>
+                        <ul class="feature-list">
+                            <li><kbd>/</kbd> Focus the search box</li>
+                            <li><kbd>N</kbd> Add a new item</li>
+                            <li><kbd>Esc</kbd>Close a dialog or cancel</li>
+                        </ul>
+                        <p class="small-text">CampusFlow .</p>
+                    </div>
+                </div>
+             </section>
         </main>
       </div>
+
+      <!-- Confirmation-->
+      <div id="modal" class="modal-background">
+        <div class=modal>
+            <h3 id="modal-title">Are you sure?</h3>
+            <p id="modal-text">This cannot be undone.</p>
+            <div class="button-row modal-buttons">
+                <button class="button" id="modal-cancel">Cancel</button>
+                <button class="button danger" id="modal-confirm">Confirm</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- pop-up messages -->
+      <div id="toasts" class="toasts"></div>
+
+      <script src="script.js"></script>
 </body>
 </html>
