@@ -522,3 +522,143 @@ th {
     text-align: left;
 }
 
+.note-text {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--muted);
+}
+
+.finished {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.empty-message {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.badge.task {
+    background: rgba(108, 140, 255, 0.18);
+    color: var(--brand);
+}
+
+.badge.event {
+    background-color: rgba(34, 211, 238, 0.18);
+    color: var(--blue);
+}
+
+.badge.done {
+    background-color: rgba(52, 211, 153, 0.18);
+    color: var(--green)
+}
+
+.badge.todo {
+    background-color: rgba(251, 191, 36, 0.18);
+    color: var(--yellow);
+}
+
+.badge.overdue {
+    background-color: rgba(248, 113, 113, 0.18);
+    color: var(--red);
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 9px;
+    margin: 2px 3px 2px 0;
+    background-color: var(--surface-2);
+    color: var(--brand);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.overdue-date {
+    color: var(--red)
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.chart-column {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-track {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.chart-bar {
+    position: relative;
+    width: 100%;
+    max-width: 44px;
+    min-height: 4px;
+    background: linear-gradient(180deg, var(--brand), var(--brand-2));
+    border-radius: 8px 8px 4px 4px;
+}
+
+.chart-value {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.chart-label {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.target-numbers {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.progress-bar {
+    height: 12px;
+    background-color: var(--surface-2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    border-radius: 20px;
+}
+
+

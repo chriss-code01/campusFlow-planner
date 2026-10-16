@@ -170,6 +170,62 @@
                         <p>Create a new task or event, or edit an existing one.</p>
                     </div>
                 </div>
+
+                <div class="card form-card">
+                    <form id="item-form">
+                        <input type="hidden" id="item-id">
+
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="item-type">Type</label>
+                                <select id="item-type">
+                                    <option value="task">📋 Task</option>
+                                    <option value="event">📅 Event</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="item-priority">Priority</label>
+                                <select id="item-priority">
+                                    <option value="1">Low</option>
+                                    <option value="2" selected>Medium</option>
+                                    <option value="3">High</option>
+                                </select>
+                            </div>
+
+                            <div class="field full">
+                                <label for="item-title">Title *</label>
+                                <input type="text" id="item-title" placeholder="e.g. Finish calculus problem set">
+                                <span id="title-error" class="error-text">Title is required.</span>
+                            </div>
+
+                            <div class="field">
+                                <label for="item-date">Date and Time</label>
+                                <input type="datetime-local" id="item-date">
+                            </div>
+
+                            <div class="field">
+                                <label for="item-duration">Duration (minutes)</label>
+                                <input type="number" id="item-duration" min="0" step="5" placeholder="e.g. 90">
+                            </div>
+
+                            <div class="field full">
+                                <label for="item-tags">Tags (separated by commas)</label>
+                                <input type="text" id="item-tags" placeholder="math, homework, exam">
+                            </div>
+
+                            <div class="field full">
+                                <label for="item-notes">Notes</label>
+                                <textarea id="item-notes" rows="3" placeholder="Optional details..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="button-row form-buttons">
+                            <button type="submit" class="buttom primary">💾 Save item</button>
+                            <button type="button" class="button" id="cancel-button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
              </section>
         </main>
       </div>
