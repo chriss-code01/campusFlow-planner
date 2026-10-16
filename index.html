@@ -227,6 +227,57 @@
                     </form>
                 </div>
              </section>
+
+             <!-- SETTINGS -->
+
+             <section id="page-settings" class="page">
+                <div class="page-header">
+                    <div>
+                        <h2>Settings</h2>
+                        <p>Personalise CampusFlow and manage your data.</p>
+                    </div>
+                </div>
+
+                <div class="two-equal">
+                    <div class="card">
+                        <h3>🎯 Study goals</h3>
+                        <div class="field">
+                            <label for="setting-target">Target study hours per week</label>
+                            <input type="number" id="setting-target" min="0">
+                        </div>
+                        <div class="field">
+                            <label for="setting-cap">Weekly cap (warning limit)</label>
+                            <input type="number" id="setting-cap" min="0">
+                        </div>
+                        <div class="field">
+                            <label for="setting-name">Your name (for the greeting)</label>\
+                            <input type="text" id="setting-name" placeholder="Alex">
+                        </div>
+                        <button class="button primary" id="save-settings-button">💾 Save settings</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎨 Appearance</h3>
+                        <div class="field">
+                            <label for="setting-theme">Theme</label>
+                            <select id="setting-theme">
+                                <option value="dark">🌙 Dark</option>
+                                <option value="light">☀️ Light</option>
+                            </select>
+                        </div>
+
+                        <h3>💾 Your data</h3>
+                        <p class="small-text">Everything is stored only in this browser. Export a backup now and then.</p>
+                        <div class="button-row">
+                            <button class="button" id="export-button-2">⬇️ Export JSON</button>
+                            <button class="button" id="import-button">⬆️ Import JSON</button>
+                            <input type="file" id="import-file" accept=".json" hidden>
+                            <button class="button" id="sample-button">🌱 Load sample data</button>
+                            <button class="button danger" id="clera-button">🗑️ Clear all</button>
+                        </div>
+                    </div>
+                </div>
+             </section>
         </main>
       </div>
 </body>
